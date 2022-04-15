@@ -16,11 +16,25 @@
 }
 .test
 {
-    height: 1000px;
+    height: 700px;
     width: 70%;
+    margin-top: 300px;
+    margin-bottom: 100px;
     background-color: #E0D9D9;
     text-align: center;
     z-index: 4;
+    border-radius: 20px;
+    border: solid 5px var(--backcolor);
+}
+.presentation
+{
+    width: 65%;
+    height: 70%;
+    margin-left: 18%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
 }
 body
 {
