@@ -12,6 +12,15 @@
     --clr: #222327;
     --backcolor: #7D7C7A;
     --navbarclr: #5B5B5B;
+    --testclr: #f00;
+}
+.test
+{
+    height: 1000px;
+    width: 70%;
+    background-color: #E0D9D9;
+    text-align: center;
+    z-index: 4;
 }
 body
 {
@@ -19,7 +28,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--backcolor);
+    z-index: 10;
 }
 .titre
 {
@@ -29,6 +38,8 @@ body
     width: 100%;
     text-align: center;
     box-shadow: 0px 1px 50px 1px;
+    opacity: 100%;
+    z-index: 5;
 }
 .navigation
 {
@@ -43,6 +54,7 @@ body
     border-radius: 10px;
     bottom: 0;
     margin-bottom: 3%;
+    z-index: 5;
 }
 .navigation ul
 {
@@ -133,6 +145,10 @@ body
     border-top-left-radius: 20px;
     box-shadow: -2px -6px 0 0 var(--navbarclr);
 }
+
+
+/*animation de trasition*/
+
 .navigation ul li:nth-child(1).active ~ .indicator
 {
     transform: translateX(calc(70px * 0));
