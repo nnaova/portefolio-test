@@ -6,25 +6,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 :root
 {
     --clr: #222327;
-    --backcolor: #7D7C7A;
+    --backcolor: #9e9e9b;
     --navbarclr: #5B5B5B;
     --testclr: #f00;
 }
+.topbtn
+{
+    height: 70px;
+    width: 70px;
+    color: var(--testclr);
+    z-index: 5;
+    position: fixed;
+    margin-top: 45%;
+    margin-left: 95%;
+    align-items:center;
+    font-size: 30px;
+}
 .test
 {
-    height: 700px;
+    height: 1400px;
     width: 70%;
     margin-top: 300px;
     margin-bottom: 100px;
     background-color: #E0D9D9;
     text-align: center;
+    align-items: center;
     z-index: 4;
     border-radius: 20px;
-    border: solid 5px var(--backcolor);
+    border: solid 5px var(--navbarclr);
 }
 .presentation
 {
@@ -40,15 +54,20 @@ body
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     min-height: 100vh;
     z-index: 10;
+    background-image: url(img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 .titre
 {
     position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: var(--backcolor);
     width: 100%;
     text-align: center;
     box-shadow: 0px 1px 50px 1px;
